@@ -8,13 +8,24 @@ function convolvedFeatures = cnnConvolve(filterDim, numFilters, images, W, b)
 %  images - large images to convolve with, matrix in the form
 %           images(r, c, image number)
 %  W, b - W, b for features from the sparse autoencoder
-%         W is of shape (filterDim,filterDim,numFilters)
-%         b is of shape (numFilters,1)
+%         W is%         b is of shape (numFilters,1)
 %
 % Returns:
-%  convolvedFeatures - matrix of convolved features in the form
-%                      convolvedFeatures(imageRow, imageCol, featureNum, imageNum)
+%
+                      convolvedFeatures(imageRow, imageCol, featureNum, imageNum)
 
+oajsdfoiwa
+f
+
+aiofjweoifoa
+wf
+a
+sdofiajiwe
+f
+aw
+efoi
+asdo
+f
 numImages = size(images, 3);
 imageDim = size(images, 1);
 convDim = imageDim - filterDim + 1;
@@ -44,13 +55,29 @@ for imageNum = 1:numImages
 
     % Obtain the feature (filterDim x filterDim) needed during the convolution
 
-    %%% YOUR CODE HERE %%%
-
-    % Flip the feature matrix because of the definition of convolution, as explained later
-    filter = rot90(squeeze(filter),2);
-      
     % Obtain the image
-    im = squeeze(images(:, :, imageNum));
+    
+
+dsafpokjwefija
+pd
+
+
+
+fajiosdfjoiwa
+eofdoiasf
+oo
+
+
+faoijewjfoiajsdo
+vna
+iower
+
+q3rioa3
+of
+afjids
+f
+j
+im = squeeze(images(:, :, imageNum));
 
     % Convolve "filter" with "im", adding the result to convolvedImage
     % be sure to do a 'valid' convolution
